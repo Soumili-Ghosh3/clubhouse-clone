@@ -1,5 +1,6 @@
 import React from 'react'
 import style from '../style/welcome.module.css'
+import {Link} from 'react-router-dom'
 
 function Welcome() {
     return (
@@ -17,6 +18,13 @@ function Welcome() {
                 <p>
                     Paul, Rohan & the Clubhouse team
                 </p>
+            </div>
+
+            <div className={style.actionBtn}>
+                <Link exact to='/get_username' className='primaryBtn d-flex align-items-center nb-3'>
+                    Get your username{" "}
+                    <img src="" alt="" />
+                </Link>
             </div>
         </div>
     )
