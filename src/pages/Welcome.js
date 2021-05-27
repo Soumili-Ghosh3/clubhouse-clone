@@ -25,6 +25,10 @@ function Welcome() {
                     Get your username{" "}
                     <img src="" alt="" />
                 </Link>
+
+                <Link>
+                    Have an invite text? Sign In
+                </Link>
             </div>
         </div>
     )
