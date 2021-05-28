@@ -5,6 +5,8 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import PhoneConfirmation from './pages/PhoneConfirmation';
 import CodeConfirm from './pages/CodeConfirm'
 import AllowNotification from './pages/AllowNotification';
+import AppLayout from './pages/layout/AppLayout'
+import Home from './pages/Home'
 
 function App() {
   return (
@@ -26,9 +28,17 @@ function App() {
           <Route exact path="/allow_notification" component={AllowNotification} />
         </Switch>
       </PlanLayout>
-
     </Route>
 
+    <Route exact path={"/home"}>
+      <AppLayout>
+        <Switch>
+          <Route exact path="/home" component={() => <Home />}>
+
+          </Route>
+        </Switch>
+      </AppLayout>
+    </Route>
     </BrowserRouter>
   );
 }
