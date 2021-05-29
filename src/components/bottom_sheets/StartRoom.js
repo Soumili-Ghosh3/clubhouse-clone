@@ -9,7 +9,7 @@ function StartRoom(props) {
             <div className={style.switch_Line}></div>
                 <div className="text-right">
                     <button className={style.addTopicBtn}>
-                        Add a Topic
+                        + Add a Topic
                     </button>
                 </div>
                 <div className={style.selectRoom}>
