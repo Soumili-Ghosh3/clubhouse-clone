@@ -31,12 +31,11 @@ function App() {
       </PlanLayout>
     </Route>
 
-    <Route exact path={"/home"}>
+    <Route exact path={["/home", "/explore"]}>
       <AppLayout>
         <Switch>
-          <Route exact path="/home" component={() => <Home />}>
-
-          </Route>
+          <Route exact path="/home" component={() => <Home />}></Route>
+          <Route exact path="/explore" component={Explore}></Route>
         </Switch>
       </AppLayout>
     </Route>
