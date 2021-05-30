@@ -50,9 +50,9 @@ function NewRoom(props) {
                         }
                     </div>
                 </div>
+                
                 <div className={style.footer}>
-                    <button onClick={() => {props.setSheetVisible(false);
-                    }}>
+                    <button onClick={() => props.setSheetVisible(false)}>
                         <img src="/images/hand-peace.png" alt="" />
                         Leave Quitely
                     </button>
