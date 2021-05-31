@@ -22,8 +22,8 @@ function Profile() {
                     </div>
                 </div>
                 <img src="/images/user-img.jpg" alt="" className={style.profile_image} />
-                <h4>Soumili Ghosh</h4>
-                <p> @soumilighosh </p>
+                <h4>Davis Johnson</h4>
+                <p> @davisjohnson </p>
                 <div className={style.follow}>
                     <p>
                         <span>0</span> followers
