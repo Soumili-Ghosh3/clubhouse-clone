@@ -6,7 +6,7 @@ function CodeConfirm() {
     return (
         <div className={style.phoneConfirmContainer}>
 
-            <Link exact to="/get_username" className={style.backBtn}>
+            <Link exact to="/invite" className={style.backBtn}>
                 <img src="/images/arrow.png" alt="" />
             </Link>
             <div className="text-center">
