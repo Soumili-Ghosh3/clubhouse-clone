@@ -4,7 +4,7 @@ import {AiOutlineFile, AiOutlinePlus} from 'react-icons/ai'
 import {BsMicMuteFill, BsMicFill} from 'react-icons/bs'
 
 function NewRoom(props) {
-    const [micMuteVisible, setMicMuteVisible] = useState(false);
+    const [micMuteVisible, setMicMuteVisible] = useState(true);
     const [itemsVisible, setItemsVisible] = useState(true);
     const card = props.cardDetail;
 
@@ -13,9 +13,9 @@ function NewRoom(props) {
             <div className={style.roomDetailContainer}>
                 <div className={style.head}>
                     <div className={"d-flex align-items-center"}>
-                        <a href="#" onClick={() => 
-                        {props.setSheetVisible(false);
-                        }}>
+                        <a href="#" onClick={() => {
+                            props.setSheetVisible(false);
+                            }}>
                             <img src="/images/arrow.png" alt="" className={style.arrow_icon} />
                         </a>
                         <span> Hallway </span>
@@ -52,7 +52,7 @@ function NewRoom(props) {
                 </div>
                 
                 <div className={style.footer}>
-                    <button onClick={() => props.setSheetVisible(false)}>
+                    <button onClick={() => {props.setSheetVisible(false);}}>
                         <img src="/images/hand-peace.png" alt="" />
                         Leave Quitely
                     </button>

@@ -10,19 +10,14 @@ function Header() {
             </Link>
 
             <div className={style.nav_items}>
-                <Link exact to="/friend_invite">
-                    <img src="/images/invite.png" alt="" />
-                </Link>
+                <img src="/images/invite.png" alt="" />
 
-                <Link exact to="/upcoming">
-                    <img src="/images/calendar.png" alt="" />
-                </Link>
 
-                <Link exact to="/activity">
-                    <img src="/images/noti.png" alt="" />
-                </Link>
+                <img src="/images/calendar.png" alt="" />
 
-                <Link exact to="/profile">
+                <img src="/images/noti.png" alt="" />
+
+                <Link to="/profile">
                     <img src="/images/b1.png" alt="" />
                 </Link>
             </div>

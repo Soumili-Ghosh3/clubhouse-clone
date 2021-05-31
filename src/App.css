@@ -42,7 +42,7 @@ a:hover{
     height: 100vh;
     position: relative;
     width: 100%;
-    max-width: 550px;
+    min-width: 550px;
     margin: auto;
     overflow: hidden;
 }

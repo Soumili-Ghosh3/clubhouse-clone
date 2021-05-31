@@ -22,6 +22,7 @@ function Home() {
             <div style={{
                 position: "fixed",
                 top: "0",
+                right: "0",
                 bottom: "0",
                 left: "0",
                 display: "flex",
@@ -62,7 +63,8 @@ function Home() {
             />
             <BottomSheet sheetTitle="new room"
             setSheetCreateRoom={(item) => setSheetCreateRoom(item)}
-            sheetVisible={sheetCreateRoom}
+            setSheetVisible={(item) => setSheetVisible(item)}
+            sheetVisible={sheetVisible}
             cardDetail={newRoomData}
             setItemsVisible={(item) => setItemVisible(item)}
             />

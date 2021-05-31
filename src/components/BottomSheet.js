@@ -18,19 +18,20 @@ function BottomSheet(props) {
                 style={{backGroundColor: props.sheetTitle == 'profile' ? 'transparent' : ''}}>
 
                     {
-                        props.sheetTitle == "new room" ? (
+                        props.sheetTitle == 'new room' ? (
                             <NewRoom 
                             cardDetail={props.cardDetail}
-                            setSheetCreateRoom={props.setSheetCreateRoom}
+                            {...console.log("hello")}
                             setSheetVisible={(item) => {
+                                console.log(item)
                             props.setSheetVisible(item);
                             props.setItemsVisible(true);
                         }}/>
                         ) : props.sheetTitle == 'start room' ? (
                             <StartRoom 
-                            cardDetail={props.cardDetail}
                             setSheetCreateRoom={props.setSheetCreateRoom}
                             setSheetVisible={(item) => {
+                                console.log(item)
                             props.setSheetVisible(item);
                             props.setItemsVisible(true);
                         }}/>
