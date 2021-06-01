@@ -61,7 +61,7 @@ function Home() {
                 }, 1000);
             }}
             />
-            <BottomSheet sheetTitle="new room"
+            <BottomSheet sheetTitle='new room'
             setSheetCreateRoom={(item) => setSheetCreateRoom(item)}
             setSheetVisible={(item) => setSheetVisible(item)}
             sheetVisible={sheetVisible}
